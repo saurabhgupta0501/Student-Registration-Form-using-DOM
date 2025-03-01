@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e06f13;
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom scrollbar styles */
+body::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(202, 223, 16, 0.925);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid rgb(17, 195, 201);
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #0b064e;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5a0e05;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid rgb(204, 10, 10);
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+button.delete, button.edit {
+  margin: 0 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+button.delete {
+  background-color: rgb(9, 68, 3);
+  color: rgb(255, 255, 255);
+}
+
+button.delete:hover {
+  background-color: rgb(71, 3, 3);
+}
+
+button.edit {
+  background-color: orange;
+  color: white;
+}
+
+button.edit:hover {
+  background-color: rgb(34, 2, 2);
+}

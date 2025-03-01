@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/apple-icon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Registration Form</h1>
+        <form id="studentForm">
+            <input type="hidden" id="editIndex">
+            <label for="name">Name:</label>
+            <input type="text" id="name" onkeyup="validate()" required><br><br>
+           
+           <script>
+                function validate() {
+  var element = document.getElementById('name');
+  element.value = element.value.replace(/[^a-zA-Z\s]+/, '');
+};
+</script>
+            <label for="studentId">Student ID:</label>
+            <input type="number" id="studentId" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required><br><br>
+
+            <label for="contact">Contact Number:</label>
+            <input type="text" id="contact" onkeyup="numeric()" required><br><br>
+            <script>
+                function numeric() {
+  var element = document.getElementById('contact');
+  element.value = element.value.replace(/[^0-9]+/, '');
+};
+            </script>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <h2>Registered Students</h2>
+        <table id="studentsTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Student ID</th>
+                    <th>Email</th>
+                    <th>Contact Number</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script src="stud.js"></script>
+</body>
+</html>
